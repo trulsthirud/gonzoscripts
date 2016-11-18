@@ -50,7 +50,7 @@ function make_report() {
     num_propertyfiles = asorti(propertyfiles)
     for (i = 1; i<= num_propertyfiles; i++) {
       propertyfilename = propertyfiles[i]
-      printf("\n\n\"%s\";\"ulike\"", propertyfilename)
+      printf("\n\n\"%s\";\"diff\"", propertyfilename)
       for (l = 1; l<= num_environs; l++) {
         printf(";\"%s\"",envirlist[l])
       }
@@ -67,8 +67,8 @@ function make_report() {
           suffix = suffix sprintf(";\"%s\"", value)
           seenvalues[value]++
         }
-        ulike = length(seenvalues) == 1 ? ";\"\"" : ";\"*\""
-        print header ulike suffix
+        diffstar = length(seenvalues) == 1 ? ";\"\"" : ";\"*\""
+        print header diffstar suffix
 	    }
 	  }
   }
