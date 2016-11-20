@@ -1,2 +1,3 @@
 # gonzoscripts
-Collection of scripts for doubtful purposes
+Collection of scripts of doubtful value
+
